@@ -4,7 +4,7 @@
   "description": "backend for a phonebook app",
   "main": "index.js",
   "scripts": {
-    "start": "node inde.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "build:ui": "rm -f build && cd ../part-2 && npm run build --prod && cp -r build ../pb-backend/",
     "deploy": "git push heroku master",

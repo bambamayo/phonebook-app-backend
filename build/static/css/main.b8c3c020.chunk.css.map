@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,cACE,UAAW,CACX,iBAAkB,CAClB,qBAAsB,CACtB,aAAc,CACd,UAAY,CACZ,cACF","file":"main.b8c3c020.chunk.css","sourcesContent":[".notification {\n  width: 100%;\n  text-align: center;\n  vertical-align: center;\n  padding: 2px 0;\n  color: white;\n  font-size: 16px;\n}\n"]}
