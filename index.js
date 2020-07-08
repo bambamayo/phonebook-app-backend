@@ -7,9 +7,9 @@ const Person = require("./models/person");
 
 const app = express();
 
-app.use(express.static("build"));
 app.use(express.json());
 app.use(cors());
+app.use(express.static("build"));
 
 //----- GET ALL PERSONS -----
 app.get("/api/persons", async (req, res) => {
