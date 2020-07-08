@@ -50,7 +50,7 @@ app.get("/api/persons/:id", async (req, res) => {
   });
 });
 
-//-----CREATE NEW PERSON -----
+//-----CREATE NEW PERSON -------
 app.post("/api/persons", async (req, res) => {
   const newPerson = req.body;
   if (!newPerson.name || !newPerson.number) {
