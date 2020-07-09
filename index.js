@@ -115,9 +115,8 @@ app.delete("/api/persons/:id", async (req, res) => {
     });
   }
 
-  let deletedPerson;
   try {
-    deletedPerson = await personToDelete.remove();
+    await personToDelete.remove();
   } catch (error) {
     console.log("second");
     return res
@@ -133,9 +132,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 5000;
 
 mongoose
+  // eslint-disable-next-line no-undef
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
